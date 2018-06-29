@@ -35,6 +35,7 @@ namespace Day5
                     int Lielakais = LielakaisSk();
                     break;
             }
+            
 
             
             //Matematika();
@@ -173,7 +174,7 @@ namespace Day5
 
             if (SkaitlisInt > SkaitlisInt2)
             {
-                Console.WriteLine(" Skaitlis 1 ir lielaks! ");
+                Console.WriteLine(" Skaitlis " + SkaitlisInt + " ir lielaks! ");
                 return SkaitlisInt;
             }
             else {
@@ -187,7 +188,7 @@ namespace Day5
                     if (SkaitlisInt < SkaitlisInt2)
                     {
 
-                        Console.WriteLine("Skaitlis 2 ir lielaks ");
+                        Console.WriteLine("Skaitlis " + SkaitlisInt2 + " ir lielaks ");
                         return SkaitlisInt2;
                     }
                     
