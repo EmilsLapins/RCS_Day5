@@ -13,6 +13,8 @@ namespace Day5
             Matematika();
             Gpa();
             
+            int rezultats = KapinamFunkija();
+            
         }
 
         private void Matematika()
@@ -97,8 +99,41 @@ namespace Day5
                     
 
             }
-
+            
         }
+
+        private int KapinamFunkija()
+        {
+            Console.WriteLine("Ievadiet kapinamo skaitli: ");
+            string Kapinam = Console.ReadLine();
+            int Kapinam2 = Convert.ToInt16(Kapinam);
+
+            Console.WriteLine("1: Kvadrata 2: Kuba");
+            string izvele = Console.ReadLine();
+
+            int Kapinam3 = 0;
+
+            switch (izvele)
+            {
+                case "1":
+                    Kapinam3 = Kapinam2 * Kapinam2;
+                    Console.WriteLine(izvele + " Kvadrata ir " + Kapinam3);
+                    return Kapinam3;
+                    
+                case "2":
+                    
+                    Kapinam3= Kapinam2 * Kapinam2 * Kapinam2;
+                    Console.WriteLine(izvele + " Kuba ir " + Kapinam3);
+                    return Kapinam3;
+                   
+                default:
+                    Console.WriteLine("error");
+                    return Kapinam3;
+                     
+            }
+           
+        }
+        
 
     }
 }
