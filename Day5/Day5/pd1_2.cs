@@ -10,10 +10,38 @@ namespace Day5
     {
         public void Publiska()
         {
-            Matematika();
-            Gpa();
+
+
+            Console.WriteLine("Ludzu izvelaties funkciju! 1: Matematika 2: GPA 3: KapinamFunkija 4: Lielakais skaitlis!");
+            string izvele = Console.ReadLine();
+
+            switch (izvele)
+            {
+                case "1":
+                    Console.WriteLine("Ievade ir 1 ");
+                    Matematika();
+                    break;
+                case "2":
+                    Console.WriteLine("Ievade ir 2 ");
+                    Gpa();
+
+                    break;
+                case "3":
+                    Console.WriteLine("Ievade ir 3 ");
+                    int Rezultats = KapinamFunkija();
+                    break;
+                case "4":
+                    Console.WriteLine("Ievade ir 4 ");
+                    int Lielakais = LielakaisSk();
+                    break;
+            }
+
             
-            int rezultats = KapinamFunkija();
+            //Matematika();
+            //Gpa();
+
+            //int Rezultats = KapinamFunkija();
+            //int Lielakais = LielakaisSk();
             
         }
 
@@ -133,7 +161,48 @@ namespace Day5
             }
            
         }
-        
+        private int LielakaisSk()
+        {
+            Console.WriteLine("Ludzu ievadiet 1. skaitli!");
+            string Skaitlis1 = Console.ReadLine();
+            int SkaitlisInt = Convert.ToInt16(Skaitlis1);
+
+            Console.WriteLine("Ludzu ievadiet 2. skaitli!");
+            string Skaitlis2 = Console.ReadLine();
+            int SkaitlisInt2 = Convert.ToInt16(Skaitlis2);
+
+            if (SkaitlisInt > SkaitlisInt2)
+            {
+                Console.WriteLine(" Skaitlis 1 ir lielaks! ");
+                return SkaitlisInt;
+            }
+            else {
+                if (SkaitlisInt == SkaitlisInt2)
+                {
+                    Console.WriteLine("Vienadi! ");
+                    return SkaitlisInt;
+                }
+                else
+                {
+                    if (SkaitlisInt < SkaitlisInt2)
+                    {
+
+                        Console.WriteLine("Skaitlis 2 ir lielaks ");
+                        return SkaitlisInt2;
+                    }
+                    
+                }
+                Console.WriteLine("Error! ");
+                return SkaitlisInt2;
+            }
+
+                
+                
+
+            
+
+
+        }
 
     }
 }
