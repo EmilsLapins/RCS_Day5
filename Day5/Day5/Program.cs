@@ -10,7 +10,14 @@ namespace Day5
     {
         static void Main(string[] args)
         {
-            
+            Console.ForegroundColor = ConsoleColor.Green;
+
+
+            StartupSound sound = new StartupSound();
+            sound.StartupSkana();
+
+
+
             pd1_1 pd1_1 = new pd1_1();
             pd1_2 pd1_2 = new pd1_2();
             
