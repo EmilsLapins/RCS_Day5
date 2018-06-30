@@ -146,7 +146,8 @@ namespace Day5
             {
                 case "1":
                     Kapinam3 = Kapinam2 * Kapinam2;
-                    Console.WriteLine(izvele + " Kvadrata ir " + Kapinam3);
+                    
+                    Console.WriteLine("{0} Kvadrata ir {1}" ,izvele, Kapinam3); // WriteLine outputu var izvadit ari sadi !
                     return Kapinam3;
                     
                 case "2":
@@ -174,7 +175,7 @@ namespace Day5
 
             if (SkaitlisInt > SkaitlisInt2)
             {
-                Console.WriteLine(" Skaitlis " + SkaitlisInt + " ir lielaks! ");
+                Console.WriteLine("Skaitlis {0} ir lielaks" ,SkaitlisInt );
                 return SkaitlisInt;
             }
             else {
@@ -188,7 +189,7 @@ namespace Day5
                     if (SkaitlisInt < SkaitlisInt2)
                     {
 
-                        Console.WriteLine("Skaitlis " + SkaitlisInt2 + " ir lielaks ");
+                        Console.WriteLine("Skaitlis {0} ir lielaks", SkaitlisInt2);
                         return SkaitlisInt2;
                     }
                     
@@ -196,13 +197,7 @@ namespace Day5
                 Console.WriteLine("Error! ");
                 return SkaitlisInt2;
             }
-
-                
-                
-
             
-
-
         }
 
     }

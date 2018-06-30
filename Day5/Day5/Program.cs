@@ -10,14 +10,10 @@ namespace Day5
     {
         static void Main(string[] args)
         {
-
-
-
+            
             pd1_1 pd1_1 = new pd1_1();
-
             pd1_2 pd1_2 = new pd1_2();
-
-
+            
             Console.WriteLine("Ludzu izvelaties klasi! 1: pd1_1 2: pd1_2 (Talak sekos izveles iespejas) ");
 
             string izvele = Console.ReadLine();
